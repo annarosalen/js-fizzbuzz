@@ -4,7 +4,7 @@ var lista="";
 // Scrivi un programma che stampi i numeri da 1 a 100,
 for (var i=1; i<=100; i++){
 
-    // ma per i multipli di 3 stampi “Fizz” al posto del numero
+    // Per i numeri che sono sia multipli di 3 che di 5 stampi “FizzBuzz”
   if (i % 3 === 0 && i % 5 === 0){
     lista = lista + "<li>" + "FizzBuzz" + "</li>";
     console.log("FizzBuzz");
@@ -14,7 +14,7 @@ for (var i=1; i<=100; i++){
     lista = lista + "<li>" + "Buzz" + "</li>";
     console.log("Buzz");
 
-    // Per i numeri che sono sia multipli di 3 che di 5 stampi “FizzBuzz”
+    // ma per i multipli di 3 stampi “Fizz” al posto del numero
   }else if (i % 3 === 0){
     lista = lista + "<li>" + "Fizz" + "</li>";
     console.log("Fizz");
@@ -26,4 +26,4 @@ for (var i=1; i<=100; i++){
 
 }
 
-document.getElementById('lista-numeri').innerHTML=lista;
+document.getElementById('lista-numeri').innerHTML= lista;
